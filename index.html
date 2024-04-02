@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puro Açai</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #C52233 ;
+        }
+        header{
+            background-color: #46295A;
+            box-shadow: 1px 6px 18px 6px  rgba(0, 0, 0, 0.300);
+            color: white;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        header h1 {
+            font-family: "Rubik Scribble", system-ui;
+            color:#ffc107 ;
+            font-size: 4em ;
+        }
+
+        header p {
+            font-family: "Edu NSW ACT Foundation", cursive;
+            font-size: 1.3em;
+        }
+
+        .navbar-nav  .nav-link{
+            color: white;
+        }
+
+        .nav-link{
+            text-align: center;
+        }
+
+        .section{
+            padding-top: 100px;
+        }
+
+        #carousel {
+        width: 100%;
+        max-height:600px;
+        overflow-y: hidden;
+        box-shadow:1px 6px 18px 6px  rgba(0, 0, 0, 0.300) ;
+        }
+
+        .card-header{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .card-body > h4{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        .card-body{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .card img{
+            height: 400px;
+        }
+
+        @media screen and (max-width: 600px){
+            .card img{
+            height: 200px;
+        }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg" >
+            <div class="container">
+                <h1>Puro Açai</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" >
+                    <span class="navbar-toggler-icon " ></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tamanho">Nossos Tamanhos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#frutas">Nossos Recheios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cobertura">Nossas Coberturas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Venha Até Nós</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section>
+            <div class="container">
+                <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100 imgcarousel" src="https://images.pexels.com/photos/6708436/pexels-photo-6708436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tijela de Açai">
+                            <div class="carousel-caption">
+                                <h2>Felicidade</h2>
+                            </div>
+                        </div>
+                        <div  data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 imgcarousel" src="https://images.pexels.com/photos/6708439/pexels-photo-6708439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tijela de Açai">
+                            <div class="carousel-caption">
+                                <h2>Alegria</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 imgcarousel" imgcarousel src="https://images.pexels.com/photos/14167805/pexels-photo-14167805.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tijela de Açai">
+                            <div class="carousel-caption">
+                                <h2>Satisfação</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 imgcarousel" src="https://images.pexels.com/photos/4099236/pexels-photo-4099236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tijela de Açai">
+                            <div class="carousel-caption">
+                                <h2>Desejo</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel"  data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button data-bs-target="#carousel"  data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel"  class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tamanho" class="section">
+            <div class="container">
+                <h1>Nossos Tamanhos</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning" >
+                                Pra dividir
+                            </div>
+                            <img src="img/copo1000.png" alt="embalagem de 1kg">
+                            <div class="card-body">
+                                <h4>1KG</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning ">
+                                Pra matar a saudade
+                            </div>
+                            <img src="img/copo700.png"  alt="embalagem de 1kg">
+                            <div class="card-body">
+                                <h4>700G</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Pra matar a vontade
+                            </div>
+                            <img src="img/copo500.png"  alt="embalagem de 1kg">
+                            <div class="card-body">
+                                <h4>500G</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Sobremesa
+                            </div>
+                            <img src="img/copo300.png"  alt="embalagem de 1kg">
+                            <div class="card-body">
+                                <h4>300G</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="frutas" class="section">
+            <div class="container">
+                <h1>Frutas</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning" >
+                                Morango
+                            </div>
+                            <img src="https://www.proativaalimentos.com.br/image/cache/catalog/img_prod/oleo-essencia-morango-100ml-fruta-puro-essencia-massagem-D_NQ_NP_960102-MLB31202671230_062019-F[1]-1000x1000.jpg" alt="Morango">
+                            <div class="card-body">
+                                <h4>Cortado em cubos</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning ">
+                                Banana
+                            </div>
+                            <img src="https://www.harrisfarm.com.au/cdn/shop/products/4211_-Bananas-Each-Square-_1200x1200px_1024x1024.jpg?v=1650600685"  alt="banana">
+                            <div class="card-body">
+                                <h4>Cortado em fatias</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Kiwi
+                            </div>
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/02/Kiwi-fruits-582a07b.jpg?quality=90&resize=556,505"  alt="kiwi">
+                            <div class="card-body">
+                                <h4>cortado em fatias</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Manga
+                            </div>
+                            <img src="https://fungoshopdelivery.com/wp-content/uploads/2022/02/Manga-palmer-un.jpg"  alt="manga">
+                            <div class="card-body">
+                                <h4>cortado em cubos</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cobertura" class="section">
+            <div class="container">
+                <h1>Coberturas</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning" >
+                                Leite condensado
+                            </div>
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNd3CN5jzgzAzmHHABHBjH9bdgatAx4UbztV3eB7T4ZWxDU20V1oPPIDAkAJWT3xtswsOxz33fgT2S9ZDi-0-idMraeJGC-hhcebHswUrc0ImOP_2IMlH69qt5EwPsPDSQsRV9QDmzyROjQr_Aj_mS5OrDXxF5A70DTqR_P2PUPs8It3pfl4kH2GFJ/s3627/leite-condensado-caseiro.jpg" alt="LC">
+                            <div class="card-body">
+                                <h4>No topo e no meio</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning ">
+                                Leite em pó
+                            </div>
+                            <img src="https://images.tcdn.com.br/img/img_prod/1165954/leite_em_po_integral_100g_111827_1_e5a6b36456f0e2c0e0eaa7cdc1dd5811.png"  alt="LP">
+                            <div class="card-body">
+                                <h4>No topo e no meio</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Amendoin Triturado
+                            </div>
+                            <img src="https://jadoces.com.br/wp-content/uploads/2022/11/xerem-amendoim-granulado-produtos-naturais-saudaveis0001.jpeg"  alt="AT">
+                            <div class="card-body">
+                                <h4>No topo e no meio</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Gotas de chocolate
+                            </div>
+                            <img src="https://cdn.awsli.com.br/2500x2500/1215/1215170/produto/102611299/4fe40f3024.jpg"  alt="GC">
+                            <div class="card-body">
+                                <h4>No topo e no meio</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="card border-secondary mb-3">
+                            <div class="card-header bg-warning">
+                                Nutella
+                            </div>
+                            <img src="https://s2-receitas.glbimg.com/0AV84K16lqfiLQ22N_cKs-uAjRo=/0x0:1280x853/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/o/g/LTShNAQDuAWoMaNrABog/creme-de-avela.jpeg"  alt="GC">
+                            <div class="card-body">
+                                <h4>Pra voce que é Nutella</h4>
+                                <a href="#" class="btn btn-primary ">Quero Esse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <div class="container">
+                <h1>Venha até nós</h1>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120921.53627638909!2d-39.9310431291767!3d-18.717859290495877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xca0d36e25df939%3A0xfc14976da9c578cf!2sAv.%20Jos%C3%A9%20Tozze%20-%20F%C3%A1tima%2C%20S%C3%A3o%20Mateus%20-%20ES%2C%2029933-560!3m2!1d-18.717877299999998!2d-39.8486414!5e0!3m2!1sen!2sbr!4v1712066833095!5m2!1sen!2sbr" width="50%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
